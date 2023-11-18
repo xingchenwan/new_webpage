@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Natural Language Processing | Xingchen Wan</title>
+    <link>https://xingchen.one/tag/natural-language-processing/</link>
+      <atom:link href="https://xingchen.one/tag/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    <description>Natural Language Processing</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xingchen.one/media/icon_huab74be30481f90068f99190f5c24f5c6_21326_512x512_fill_lanczos_center_3.png</url>
+      <title>Natural Language Processing</title>
+      <link>https://xingchen.one/tag/natural-language-processing/</link>
+    </image>
+    
+    <item>
+      <title>Universal Self-Adaptive Prompting</title>
+      <link>https://xingchen.one/publication/usp/</link>
+      <pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/usp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Survival of the Most Influential Prompts: Efficient Black-Box Prompt Search via Clustering and Pruning</title>
+      <link>https://xingchen.one/publication/claps/</link>
+      <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/claps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Better Zero-Shot Reasoning with Self-Adaptive Prompting</title>
+      <link>https://xingchen.one/publication/cosp/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/cosp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sentiment Correlation in Financial News Networks and Associated Market Movements</title>
+      <link>https://xingchen.one/publication/sentiment/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/sentiment/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

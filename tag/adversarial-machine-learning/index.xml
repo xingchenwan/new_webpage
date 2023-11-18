@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adversarial Machine Learning | Xingchen Wan</title>
+    <link>https://xingchen.one/tag/adversarial-machine-learning/</link>
+      <atom:link href="https://xingchen.one/tag/adversarial-machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Adversarial Machine Learning</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xingchen.one/media/icon_huab74be30481f90068f99190f5c24f5c6_21326_512x512_fill_lanczos_center_3.png</url>
+      <title>Adversarial Machine Learning</title>
+      <link>https://xingchen.one/tag/adversarial-machine-learning/</link>
+    </image>
+    
+    <item>
+      <title>Adversarial Attacks on Graph Classifiers via Bayesian Optimisation</title>
+      <link>https://xingchen.one/publication/graphattack/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/graphattack/</guid>
+      <description>&lt;p&gt;A preliminary version of this paper appeared at the ICML 2021 Workshop on Adversarial Machine Learning.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Xingchen Wan</title>
+    <link>https://xingchen.one/publication/</link>
+      <atom:link href="https://xingchen.one/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xingchen.one/media/icon_huab74be30481f90068f99190f5c24f5c6_21326_512x512_fill_lanczos_center_3.png</url>
+      <title>Publications</title>
+      <link>https://xingchen.one/publication/</link>
+    </image>
+    
+    <item>
+      <title>Universal Self-Adaptive Prompting</title>
+      <link>https://xingchen.one/publication/usp/</link>
+      <pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/usp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Survival of the Most Influential Prompts: Efficient Black-Box Prompt Search via Clustering and Pruning</title>
+      <link>https://xingchen.one/publication/claps/</link>
+      <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/claps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian Optimisation of Functions on Graphs</title>
+      <link>https://xingchen.one/publication/bayesoptg/</link>
+      <pubDate>Sun, 10 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/bayesoptg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian Quadrature for Neural Ensemble Search</title>
+      <link>https://xingchen.one/publication/bqnes/</link>
+      <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/bqnes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Better Zero-Shot Reasoning with Self-Adaptive Prompting</title>
+      <link>https://xingchen.one/publication/cosp/</link>
+      <pubDate>Sat, 01 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/cosp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian Optimization over Discrete and Mixed Spaces via Probabilistic Reparameterization</title>
+      <link>https://xingchen.one/publication/prbo/</link>
+      <pubDate>Thu, 22 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/prbo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian Generational Population-Based Training</title>
+      <link>https://xingchen.one/publication/bgpbt/</link>
+      <pubDate>Sun, 24 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/bgpbt/</guid>
+      <description>&lt;p&gt;A preliminary version of this paper appeared at the ICLR 2022 Workshop on Agent Learning in Open-Endedness (ALOE).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>On Redundancy and Diversity in Cell-based Neural Architecture Search</title>
+      <link>https://xingchen.one/publication/postnas/</link>
+      <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/postnas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BOiLS: Bayesian Optimisation for Logic Synthesis</title>
+      <link>https://xingchen.one/publication/boils/</link>
+      <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/boils/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Approximate Neural Architecture Search via Operation Distribution Learning</title>
+      <link>https://xingchen.one/publication/anasod/</link>
+      <pubDate>Wed, 05 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/anasod/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adversarial Attacks on Graph Classifiers via Bayesian Optimisation</title>
+      <link>https://xingchen.one/publication/graphattack/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/graphattack/</guid>
+      <description>&lt;p&gt;A preliminary version of this paper appeared at the ICML 2021 Workshop on Adversarial Machine Learning.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Think Global and Act Local: Bayesian Optimisation over High-Dimensional Categorical and Mixed Search Spaces</title>
+      <link>https://xingchen.one/publication/casmopolitan/</link>
+      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/casmopolitan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interpretable Neural Architecture Search via Bayesian Optimisation with Weisfeiler-Lehman Kernels</title>
+      <link>https://xingchen.one/publication/nasbowl/</link>
+      <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/nasbowl/</guid>
+      <description>&lt;p&gt;This work was also presented at the &lt;a href=&#34;https://automl-seminars.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AutoML seminar&lt;/a&gt; on 3 Dec 2020.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sentiment Correlation in Financial News Networks and Associated Market Movements</title>
+      <link>https://xingchen.one/publication/sentiment/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/sentiment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iterate Averaging in the Quest for Best Test Error</title>
+      <link>https://xingchen.one/publication/gadam/</link>
+      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/gadam/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

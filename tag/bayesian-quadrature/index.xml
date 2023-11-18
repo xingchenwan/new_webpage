@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bayesian Quadrature | Xingchen Wan</title>
+    <link>https://xingchen.one/tag/bayesian-quadrature/</link>
+      <atom:link href="https://xingchen.one/tag/bayesian-quadrature/index.xml" rel="self" type="application/rss+xml" />
+    <description>Bayesian Quadrature</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 06 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xingchen.one/media/icon_huab74be30481f90068f99190f5c24f5c6_21326_512x512_fill_lanczos_center_3.png</url>
+      <title>Bayesian Quadrature</title>
+      <link>https://xingchen.one/tag/bayesian-quadrature/</link>
+    </image>
+    
+    <item>
+      <title>Bayesian Quadrature for Neural Ensemble Search</title>
+      <link>https://xingchen.one/publication/bqnes/</link>
+      <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/bqnes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

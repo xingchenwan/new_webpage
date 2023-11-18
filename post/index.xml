@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Xingchen Wan</title>
+    <link>https://xingchen.one/post/</link>
+      <atom:link href="https://xingchen.one/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 23 May 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://xingchen.one/media/icon_huab74be30481f90068f99190f5c24f5c6_21326_512x512_fill_lanczos_center_3.png</url>
+      <title>Posts</title>
+      <link>https://xingchen.one/post/</link>
+    </image>
+    
+    <item>
+      <title>Introducing Self-Adaptive Prompting for Large Language Models</title>
+      <link>https://xingchen.one/post/llm_prompting/</link>
+      <pubDate>Tue, 23 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/post/llm_prompting/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;3 Nov 2023: COSP and USP have also been covered in a &lt;a href=&#34;https://blog.research.google/2023/11/zero-shot-adaptive-prompting-of-large.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;recent Google Research blog&lt;/a&gt; &amp;ndash; click for more details!&lt;/strong&gt;&lt;/p&gt;
+&lt;span style=&#34;color:gray&#34;&gt;
+&lt;i&gt; This post introduces a recent work done during my internship at Google Cloud AI Research covering the following papers:&lt;/i&gt;
+&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Xingchen Wan, Ruoxi Sun, Hanjun Dai, Sercan Ö. Arık, Tomas Pfister (2023). &lt;a href=&#34;https://aclanthology.org/2023.findings-acl.216/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Better Zero-Shot Reasoning with Self-Adaptive Prompting&lt;/a&gt;. &lt;em&gt;Findings of the Association for Computational Linguistics: ACL 2023&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Xingchen Wan, Ruoxi Sun, Hootan Nakhost, Hanjun Dai, Julian Martin Eisenschlos, Sercan Ö. Arık, Tomas Pfister (2023). &lt;a href=&#34;https://arxiv.org/abs/2305.14926&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Universal Self-Adaptive Prompting&lt;/a&gt;. &lt;em&gt;Empirical Methods in Natural Language Processing (EMNLP)&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The recent advances in large language models (LLMs) are among the most astonishing breakthroughs in the history of artificial intelligence. A hallmark feature of the modern LLMs is their impressive abilities in general problem-solving in &lt;em&gt;few-shot&lt;/em&gt; and &lt;em&gt;zero-shot&lt;/em&gt; setups, even without explicit training on these tasks.
+There is, however, still a gap between few-shot and zero-shot setup: in few-shot, the models are shown &lt;em&gt;in-context demonstrations&lt;/em&gt; like the example below (taken from the &lt;a href=&#34;https://arxiv.org/abs/2201.11903&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;chain-of-thought (CoT) paper&lt;/a&gt;) &amp;ndash; the first question-answer pair is the demonstration prepended to the actual question being asked (the second question):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Q:&lt;/strong&gt; There are 15 trees in the grove. Grove workers will plant trees in the grove today. After they are done, there will be 21 trees. How many trees did the grove workers plant today?&lt;br&gt;
+&lt;strong&gt;A:&lt;/strong&gt; Let&amp;rsquo;s think step by step. There are 15 trees originally. Then there were 21 trees after some more were planted. So there must have been 21 - 15 = 6. The answer is 6.&lt;br&gt;
+&lt;strong&gt;Q:&lt;/strong&gt; If there are 3 cars in the parking lot and 2 more cars arrive, how many cars are in the parking lot?&lt;br&gt;
+&lt;strong&gt;A:&lt;/strong&gt; Let&amp;rsquo;s think step by step.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In zero-shot, in contrast, the LLM is directly prompted with the &lt;em&gt;test question only&lt;/em&gt; (i.e., without the first question-answer pair shown above).&lt;/p&gt;
+&lt;p&gt;Zero-shot is the most general as it requires no handcrafting and is the most natural way of asking things. However, zero-shot performance is typically weaker as the LLM is not shown with model answers and thus is prone to outputting spurious answers.&lt;/p&gt;
+&lt;h1 id=&#34;why-dont-we-simply-handcraft-some-demos-if-it-is-few-shot&#34;&gt;Why don&amp;rsquo;t we simply handcraft some demos if it is &amp;ldquo;few&amp;rdquo;-shot?&lt;/h1&gt;
+&lt;p&gt;You certainly can &amp;ndash; modern LLMs are great because they can work with a handful of labeled queries (as opposed to hundreds to thousands if you fine-tune them).&lt;/p&gt;
+&lt;p&gt;However, there are examples where this can be challenging if, for example,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You have a lot of tasks, and you end up having to handcraft &lt;code&gt;n_task * n_shot,&lt;/code&gt; which can be pretty big even if &lt;code&gt;n_shot&lt;/code&gt; is moderate.&lt;/li&gt;
+&lt;li&gt;Test queries are challenging or time-consuming in the first place (e.g., summarising a long article, answering a medical question that requires expertise or at least some research, or simply the example above: to do chain-of-thought prompting you have to solve a math question by hand first &amp;ndash; quite a challenge for people like me who have graduated from primary school for too long.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;can-we-have-demonstrations-even-in-zero-shot&#34;&gt;Can we have demonstrations even in zero-shot?&lt;/h1&gt;
+&lt;p&gt;We know that LLMs benefit from demonstrations (otherwise, few-shot won&amp;rsquo;t be better!), and we know that LLMs have at least &lt;em&gt;some&lt;/em&gt; zero-shot abilities. So the natural next step is&amp;hellip;&lt;/p&gt;
+&lt;h3 id=&#34;why-not-use-the-models-own-outputs-as-demonstrations&#34;&gt;Why not use the model&amp;rsquo;s own outputs as demonstrations?&lt;/h3&gt;
+&lt;p&gt;Several previous works have proposed this, like &lt;a href=&#34;https://arxiv.org/abs/2210.03493&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AutoCoT&lt;/a&gt;: We ask the LLMs to give answers under zero-shot prompting and prompt the models again with their outputs as demonstrations. A problem, though, is precisely what we mentioned just now &amp;ndash; &lt;em&gt;zero-shot solutions are imperfect&lt;/em&gt;, and we risk giving LLMs wrong demonstrations, which in some cases can be worse than &lt;em&gt;no demonstrations at all&lt;/em&gt;. So the question now is&amp;hellip;&lt;/p&gt;
+&lt;h3 id=&#34;can-we-select-_good_-outputs-as-demonstrations-without-verifying-their-correctness&#34;&gt;Can we select &lt;em&gt;good&lt;/em&gt; outputs as demonstrations without verifying their correctness?&lt;/h3&gt;
+&lt;p&gt;A trivial way is to sift through the zero-shot outputs and retain correct answers. This, however, substitutes the manual effort in hand-labelling demos in the few-shot setup with hand-verifying outputs in zero-shot answers and defeats our purpose of achieving automatic prompting.&lt;/p&gt;
+&lt;p&gt;This is where &lt;em&gt;self-adaptive prompting&lt;/em&gt; comes in: the TL;DR of the key idea is:&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;color:blue&#34;&gt;&lt;strong&gt;Confident and consistent answers from the LLMs are more likely correct.&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This, of course, depends on how good the uncertainty estimate the LLMs have, but in large models, both previous works like &lt;a href=&#34;https://arxiv.org/abs/2207.05221&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt; and &lt;a href=&#34;https://arxiv.org/abs/2210.11610&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt; and our results have shown that they are fairly well-calibrated.&lt;/p&gt;
+&lt;p&gt;To measure confidence, we borrow the &lt;a href=&#34;https://arxiv.org/abs/2203.11171&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;self-consistency&lt;/a&gt; idea (but not just for majority vote): In &lt;a href=&#34;https://aclanthology.org/2023.findings-acl.216/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Consistency-Based Self-Adaptive Prompting (COSP)&lt;/a&gt;, our ACL 2023 paper, we ask the same question multiple times but with a non-zero temperature to induce stochasticity: if the model is certain, it should output the same answer each time and vice versa. We then compute the &lt;em&gt;entropy&lt;/em&gt; of the answers to gauge the uncertainty.&lt;/p&gt;
+&lt;p&gt;We later generalize this simple idea in &lt;em&gt;Universal&lt;/em&gt; Self-Adaptive Prompting to two additional setups for general NLP tasks beyond reasoning:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Classification&lt;/em&gt; (CLS), where we have the output &lt;em&gt;logits&lt;/em&gt; &amp;ndash; we can measure the uncertainty there without multiple sampling&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Short&lt;/em&gt;-form generation (SFG), like question answering, we can use the same procedure mentioned above for COSP, but without the rationale-generating step.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Long&lt;/em&gt; text generation (LFG), like summarization and translation, the questions are often open-ended. The outputs are unlikely to be identical verbatim even if the LLM is certain, given the generation length and the fact that multiple answers can be equally plausible, we use an overlap metric instead by computing the average of the pairwise ROUGE score between the different outputs to the same query.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We compute the relevant confidence scores depending on the type of task on the aforementioned set of unlabeled test samples. After scoring, we pick the confident outputs, plus some diversity encouragement and repetition penalty, to form a model-generated pseudo-demonstration set. We finally query the LLM again in a few-shot format with these pseudo-demonstrations to obtain the final predictions on the entire test set.&lt;/p&gt;
+&lt;p&gt;Crucially, in all cases, this only requires unlabeled data and LLM outputs but no ground-truth labels at any point in time, and thus, the entire approach is zero-shot, or more precisely &lt;a href=&#34;https://arxiv.org/abs/1703.04394&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;transductive zero-shot&lt;/a&gt;. There are several additional things to the idea above, and please check the papers for the details.&lt;/p&gt;
+&lt;h3 id=&#34;putting-all-together&#34;&gt;Putting all together&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-illustration-of-usp-in-exemplary-tasks-classification-qa-and-text-summarization-similar-to-cosp-the-llm-first-generates-predictions-on-an-unlabeled-dataset-whose-outputs-are-scored-with-logit-entropy-consistency-or-alignment-depending-on-the-task-type-and-pseudo-demonstrations-are-selected-from-these-input-output-pairs-in-stage-2-the-test-instances-are-augmented-with-pseudo-demos-for-prediction&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Illustration of USP in exemplary tasks (classification, QA and text summarization). Similar to COSP, the LLM first generates predictions on an unlabeled dataset whose outputs are scored with logit entropy, consistency or alignment, depending on the task type, and pseudo-demonstrations are selected from these input-output pairs. In Stage 2, the test instances are augmented with pseudo-demos for prediction.&#34;
+           src=&#34;https://xingchen.one/post/llm_prompting/usp_animation.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Illustration of USP in exemplary tasks (classification, QA and text summarization). Similar to COSP, the LLM first generates predictions on an unlabeled dataset whose outputs are scored with logit entropy, consistency or alignment, depending on the task type, and pseudo-demonstrations are selected from these input-output pairs. In Stage 2, the test instances are augmented with pseudo-demos for prediction.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Putting all together, we have the following pipeline,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Run zero-shot prompting to obtain a bunch of outputs on some test outputs, using self-consistency as mentioned above if necessary.&lt;/li&gt;
+&lt;li&gt;Use the procedure described to &lt;em&gt;score&lt;/em&gt; these outputs, and select the confident outputs as demos (plus some diversity encouragement and/or repetition penalty).&lt;/li&gt;
+&lt;li&gt;Using the outputs obtained in Step 2 as &lt;em&gt;pseudo&lt;/em&gt;-demos, query the LLM again in a few-shot format to get the final predictions.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&amp;hellip; which is what we show in the cover picture of this post.&lt;/p&gt;
+&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;
+&lt;p&gt;On COSP, which focuses on reasoning tasks:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-comparison-of-zero-shot-cosp-and-standard-zero-shot-and-few-shot-setups-averaged-across-six-reasoning-tasks&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Comparison of zero-shot COSP and standard zero-shot and few-shot setups, averaged across six reasoning tasks.&#34; srcset=&#34;
+               /post/llm_prompting/cosp_tweet_1_huef8c3067217d4cd586cc4cc51234a6b0_22244_3cfe191328c8dfe74f4faadc2c46dcac.webp 400w,
+               /post/llm_prompting/cosp_tweet_1_huef8c3067217d4cd586cc4cc51234a6b0_22244_6c358fa9d43372efb1eeaf3db2827559.webp 760w,
+               /post/llm_prompting/cosp_tweet_1_huef8c3067217d4cd586cc4cc51234a6b0_22244_1200x1200_fit_q100_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://xingchen.one/post/llm_prompting/cosp_tweet_1_huef8c3067217d4cd586cc4cc51234a6b0_22244_3cfe191328c8dfe74f4faadc2c46dcac.webp&#34;
+               width=&#34;400&#34;
+               height=&#34;369&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Comparison of zero-shot COSP and standard zero-shot and few-shot setups, averaged across six reasoning tasks.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We can see that zero-shot COSP massively outperforms standard zero-shot (&lt;a href=&#34;https://arxiv.org/abs/2205.11916&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Let&amp;rsquo;s think step by step&lt;/em&gt;&lt;/a&gt; only) and is on par or better than 5-shot with labeled examples over 3 LLMs. We also outperform previous SoTAs like AutoCoT (shown in the paper). See the papers for more results and analyses!&lt;/p&gt;
+&lt;p&gt;In USP, we expand our analysis to a much wider range of tasks, including more than 25 classifications, short-form generation, and long-form generation tasks. We also study the &lt;a href=&#34;https://arxiv.org/abs/2210.09261&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BIG-Bench Hard&lt;/a&gt; suite of tasks where LLMs previously underperformed humans using the state-of-the-art &lt;a href=&#34;https://blog.google/technology/ai/google-palm-2-ai-large-language-model/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PaLM 2&lt;/a&gt; models. We show that in all cases, USP again outperforms the baselines and is competitive to prompting with golden examples.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-key-results-of-usp-cls-refers-to-an-average-of-15-classification-tasks-sfg-refers-to-an-average-of-5-short-form-generation-tasks-lfg-refers-to-an-average-of-2-summarization-tasks&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Key results of USP: CLS refers to an average of 15 classification tasks; SFG refers to an average of 5 short-form generation tasks; LFG refers to an average of 2 summarization tasks.&#34; srcset=&#34;
+               /post/llm_prompting/usp_results_hu6b6d67c2eaa63bac42484b93bc31badf_281495_74ca759df3a6db5943943c30f8ce4c5a.webp 400w,
+               /post/llm_prompting/usp_results_hu6b6d67c2eaa63bac42484b93bc31badf_281495_5ed475fdd88dab8af2387f5bfec7f0f6.webp 760w,
+               /post/llm_prompting/usp_results_hu6b6d67c2eaa63bac42484b93bc31badf_281495_1200x1200_fit_q100_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://xingchen.one/post/llm_prompting/usp_results_hu6b6d67c2eaa63bac42484b93bc31badf_281495_74ca759df3a6db5943943c30f8ce4c5a.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;385&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Key results of USP: CLS refers to an average of 15 classification tasks; SFG refers to an average of 5 short-form generation tasks; LFG refers to an average of 2 summarization tasks.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;We also analyze the working mechanism of USP by validating the key observation above on the relation between confidence and correctness, and we found that in an overwhelming majority of the cases, USP picks confident predictions that are more likely better in all task types considered, as shown in the figure below.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-usp-picks-confident-predictions-that-are-more-likely-better-ground-truth-performance-metrics-against-usp-confidence-scores-in-selected-tasks-in-various-task-types-blue-cls-orange-sfg-green-lfg-with-palm-540b&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;USP picks confident predictions that are more likely better. Ground-truth performance metrics against USP confidence scores in selected tasks in various task types (blue: CLS, orange: SFG, green: LFG) with PaLM-540B.&#34; srcset=&#34;
+               /post/llm_prompting/usp_mechanism_hude2f0a1709fd6f561dae3a22100aab44_135191_c1250642023cb2eacbb983c54d7a015b.webp 400w,
+               /post/llm_prompting/usp_mechanism_hude2f0a1709fd6f561dae3a22100aab44_135191_2c3dd850e9362b4a85388a1f186eb899.webp 760w,
+               /post/llm_prompting/usp_mechanism_hude2f0a1709fd6f561dae3a22100aab44_135191_1200x1200_fit_q100_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://xingchen.one/post/llm_prompting/usp_mechanism_hude2f0a1709fd6f561dae3a22100aab44_135191_c1250642023cb2eacbb983c54d7a015b.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;170&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      USP picks confident predictions that are more likely better. Ground-truth performance metrics against USP confidence scores in selected tasks in various task types (blue: CLS, orange: SFG, green: LFG) with PaLM-540B.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;Zero-shot inference is a highly sought-after capability of modern LLMs, yet the success in which poses unique challenges. We propose COSP and USP, a family of versatile, zero-shot automatic prompting techniques applicable to a wide range of tasks. We show large improvement over the state-of-the-art baselines over numerous task and model combinations.&lt;/p&gt;
+&lt;h1 id=&#34;acknowledgements&#34;&gt;Acknowledgements&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;This work was conducted by Xingchen Wan, Ruoxi Sun, Hootan Nakhost, Hanjun Dai, Julian Martin Eisenschlos, Sercan Ö. Arık, and Tomas Pfister. We would like to thank Jinsung Yoon and Xuezhi Wang for providing helpful reviews, and other colleagues at Google Cloud AI Research for their discussion and feedback.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
