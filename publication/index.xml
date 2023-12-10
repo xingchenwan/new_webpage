@@ -5,12 +5,20 @@
     <link>https://xingchen.one/publication/</link>
       <atom:link href="https://xingchen.one/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Feb 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://xingchen.one/media/icon_huab74be30481f90068f99190f5c24f5c6_21326_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://xingchen.one/publication/</link>
     </image>
+    
+    <item>
+      <title>Working Memory Capacity of ChatGPT: An Empirical Study</title>
+      <link>https://xingchen.one/publication/working_memory/</link>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/working_memory/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Universal Self-Adaptive Prompting</title>
