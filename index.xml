@@ -45,14 +45,6 @@
     </item>
     
     <item>
-      <title>Self-Adaptive Prompting for Large Language Models</title>
-      <link>https://xingchen.one/talk/self-adaptive-prompting-for-large-language-models/</link>
-      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>https://xingchen.one/talk/self-adaptive-prompting-for-large-language-models/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Bayesian Quadrature for Neural Ensemble Search</title>
       <link>https://xingchen.one/publication/bqnes/</link>
       <pubDate>Thu, 06 Jul 2023 00:00:00 +0000</pubDate>
@@ -281,14 +273,6 @@ There is, however, still a gap between few-shot and zero-shot setup: in few-shot
       <link>https://xingchen.one/publication/postnas/</link>
       <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://xingchen.one/publication/postnas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>On Redundancy and Diversity in Cell-based Neural Architecture Search</title>
-      <link>https://xingchen.one/talk/on-redundancy-and-diversity-in-cell-based-neural-architecture-search/</link>
-      <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>https://xingchen.one/talk/on-redundancy-and-diversity-in-cell-based-neural-architecture-search/</guid>
       <description></description>
     </item>
     
