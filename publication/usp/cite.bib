@@ -1,8 +1,21 @@
-@inproceedings{
-wan2023universal,
-title={Universal Self-Adaptive Prompting},
-  author={Wan, Xingchen and Sun, Ruoxi and Nakhost, Hootan and Dai, Hanjun and Eisenschlos, Julian Martin and Arik, Sercan O and Pfister, Tomas},
-booktitle={The 2023 Conference on Empirical Methods in Natural Language Processing},
-year={2023},
-url={https://openreview.net/forum?id=YivRtscaFW}
+@inproceedings{wan-etal-2023-universal,
+    title = "Universal Self-Adaptive Prompting",
+    author = "Wan, Xingchen  and
+      Sun, Ruoxi  and
+      Nakhost, Hootan  and
+      Dai, Hanjun  and
+      Eisenschlos, Julian  and
+      Arik, Sercan  and
+      Pfister, Tomas",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.emnlp-main.461",
+    pages = "7437--7462",
+    abstract = "A hallmark of modern large language models (LLMs) is their impressive general zero-shot and few-shot abilities, often elicited through in-context learning (ICL) via prompting. However, while highly coveted and being the most general, zero-shot performances in LLMs are still typically weaker due to the lack of guidance and the difficulty of applying existing automatic prompt design methods in general tasks when ground-truth labels are unavailable. In this study, we address this by presenting Universal Self-Adaptive Prompting (USP), an automatic prompt design approach specifically tailored for zero-shot learning (while compatible with few-shot). Requiring only a small amount of unlabeled data and an inference-only LLM, USP is highly versatile: to achieve universal prompting, USP categorizes a possible NLP task into one of the three possible task types and then uses a corresponding selector to select the most suitable queries and zero-shot model-generated responses as pseudo-demonstrations, thereby generalizing ICL to the zero-shot setup in a fully automated way. We evaluate USP with PaLM and PaLM 2 models and demonstrate performances that are considerably stronger than standard zero-shot baselines and often comparable to or even superior to few-shot baselines across more than 40 natural language understanding, natural language generation, and reasoning tasks.",
 }
