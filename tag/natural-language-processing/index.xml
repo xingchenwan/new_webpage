@@ -5,7 +5,7 @@
     <link>https://xingchen.one/tag/natural-language-processing/</link>
       <atom:link href="https://xingchen.one/tag/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
     <description>Natural Language Processing</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 24 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 11 May 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://xingchen.one/media/icon_huab74be30481f90068f99190f5c24f5c6_21326_512x512_fill_lanczos_center_3.png</url>
       <title>Natural Language Processing</title>
@@ -13,11 +13,69 @@
     </image>
     
     <item>
+      <title>Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering</title>
+      <link>https://xingchen.one/publication/bc/</link>
+      <pubDate>Sat, 11 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/bc/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-illustration-of-batch-calibration-bc-batches-of-demonstrations-with-in-context-examples-and-test-samples-are-passed-into-the-llm-due-to-sources-of-implicit-bias-in-the-context-the-score-distribution-from-the-llm-becomes-biased-bc-is-a-modular-and-adaptable-layer-option-appended-to-the-output-of-the-llm-that-generates-calibrated-scores-visualized-for-illustration-only&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Illustration of Batch Calibration (BC). Batches of demonstrations with in-context examples and test samples are passed into the LLM. Due to sources of implicit bias in the context, the score distribution from the LLM becomes biased. BC is a modular and adaptable layer option appended to the output of the LLM that generates calibrated scores (visualized for illustration only)&#34;
+           src=&#34;https://xingchen.one/publication/bc/demo.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Illustration of Batch Calibration (BC). Batches of demonstrations with in-context examples and test samples are passed into the LLM. Due to sources of implicit bias in the context, the score distribution from the LLM becomes biased. BC is a modular and adaptable layer option appended to the output of the LLM that generates calibrated scores (visualized for illustration only).
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Universal Self-Adaptive Prompting</title>
       <link>https://xingchen.one/publication/usp/</link>
       <pubDate>Sun, 24 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://xingchen.one/publication/usp/</guid>
-      <description></description>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-illustration-of-usp-in-exemplary-tasks-classification-qa-and-text-summarization-similar-to-cosp-the-llm-first-generates-predictions-on-an-unlabeled-dataset-whose-outputs-are-scored-with-logit-entropy-consistency-or-alignment-depending-on-the-task-type-and-pseudo-demonstrations-are-selected-from-these-input-output-pairs-in-stage-2-the-test-instances-are-augmented-with-pseudo-demos-for-prediction&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Illustration of USP in exemplary tasks (classification, QA and text summarization). Similar to COSP, the LLM first generates predictions on an unlabeled dataset whose outputs are scored with logit entropy, consistency or alignment, depending on the task type, and pseudo-demonstrations are selected from these input-output pairs. In Stage 2, the test instances are augmented with pseudo-demos for prediction.&#34;
+           src=&#34;https://xingchen.one/publication/usp/demo.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Illustration of USP in exemplary tasks (classification, QA and text summarization). Similar to COSP, the LLM first generates predictions on an unlabeled dataset whose outputs are scored with logit entropy, consistency or alignment, depending on the task type, and pseudo-demonstrations are selected from these input-output pairs. In Stage 2, the test instances are augmented with pseudo-demos for prediction.
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
     </item>
     
     <item>
