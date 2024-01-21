@@ -46,6 +46,14 @@
     </item>
     
     <item>
+      <title>Adaptive Batch Sizes for Active Learning: A Probabilistic Numerics Approach</title>
+      <link>https://xingchen.one/publication/adabatal/</link>
+      <pubDate>Sat, 04 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/adabatal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Working Memory Capacity of ChatGPT: An Empirical Study</title>
       <link>https://xingchen.one/publication/working_memory/</link>
       <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
@@ -129,7 +137,7 @@
 &lt;/span&gt;
 &lt;ul&gt;
 &lt;li&gt;Xingchen Wan, Ruoxi Sun, Hanjun Dai, Sercan Ö. Arık, Tomas Pfister (2023). &lt;a href=&#34;https://aclanthology.org/2023.findings-acl.216/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Better Zero-Shot Reasoning with Self-Adaptive Prompting&lt;/a&gt;. &lt;em&gt;Findings of the Association for Computational Linguistics: ACL 2023&lt;/em&gt;.&lt;/li&gt;
-&lt;li&gt;Xingchen Wan, Ruoxi Sun, Hootan Nakhost, Hanjun Dai, Julian Martin Eisenschlos, Sercan Ö. Arık, Tomas Pfister (2023). [https://aclanthology.org/2023.emnlp-main.461/). &lt;em&gt;Empirical Methods in Natural Language Processing (EMNLP)&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Xingchen Wan, Ruoxi Sun, Hootan Nakhost, Hanjun Dai, Julian Martin Eisenschlos, Sercan Ö. Arık, Tomas Pfister (2023) &lt;a href=&#34;https://aclanthology.org/2023.emnlp-main.461/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Universal Self-Adaptive Prompting&lt;/a&gt;. &lt;em&gt;Empirical Methods in Natural Language Processing (EMNLP)&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The recent advances in large language models (LLMs) are among the most astonishing breakthroughs in the history of artificial intelligence. A hallmark feature of the modern LLMs is their impressive abilities in general problem-solving in &lt;em&gt;few-shot&lt;/em&gt; and &lt;em&gt;zero-shot&lt;/em&gt; setups, even without explicit training on these tasks.
 There is, however, still a gap between few-shot and zero-shot setup: in few-shot, the models are shown &lt;em&gt;in-context demonstrations&lt;/em&gt; like the example below (taken from the &lt;a href=&#34;https://arxiv.org/abs/2201.11903&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;chain-of-thought (CoT) paper&lt;/a&gt;) &amp;ndash; the first question-answer pair is the demonstration prepended to the actual question being asked (the second question):&lt;/p&gt;
