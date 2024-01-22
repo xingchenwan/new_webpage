@@ -30,10 +30,6 @@
     <lastmod>2024-05-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://xingchen.one/publication-type/2/</loc>
-    <lastmod>2024-05-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://xingchen.one/publication/adabatal/</loc>
     <lastmod>2024-05-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -48,6 +44,18 @@
   </url><url>
     <loc>https://xingchen.one/publication/working_memory/</loc>
     <lastmod>2024-02-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://xingchen.one/publication-type/2/</loc>
+    <lastmod>2024-01-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://xingchen.one/tag/deep-learning-optimization/</loc>
+    <lastmod>2024-01-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://xingchen.one/publication/gadam/</loc>
+    <lastmod>2024-01-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://xingchen.one/publication/usp/</loc>
