@@ -47,7 +47,11 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://xingchen.one/publication-type/2/</loc>
-    <lastmod>2024-01-22T00:00:00+00:00</lastmod>
+    <lastmod>2024-01-27T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://xingchen.one/publication/autopeft/</loc>
+    <lastmod>2024-01-27T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://xingchen.one/tag/deep-learning-optimization/</loc>
