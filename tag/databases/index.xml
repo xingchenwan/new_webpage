@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Databases | Xingchen Wan</title>
+    <link>https://xingchen.one/tag/databases/</link>
+      <atom:link href="https://xingchen.one/tag/databases/index.xml" rel="self" type="application/rss+xml" />
+    <description>Databases</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Dec 2024 00:00:01 +0000</lastBuildDate>
+    <image>
+      <url>https://xingchen.one/media/icon_huab74be30481f90068f99190f5c24f5c6_21326_512x512_fill_lanczos_center_3.png</url>
+      <title>Databases</title>
+      <link>https://xingchen.one/tag/databases/</link>
+    </image>
+    
+    <item>
+      <title>UQE: A Query Engine for Unstructured Databases</title>
+      <link>https://xingchen.one/publication/uql/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:01 +0000</pubDate>
+      <guid>https://xingchen.one/publication/uql/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

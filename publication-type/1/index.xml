@@ -5,12 +5,66 @@
     <link>https://xingchen.one/publication-type/1/</link>
       <atom:link href="https://xingchen.one/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Dec 2024 00:00:02 +0000</lastBuildDate>
     <image>
       <url>https://xingchen.one/media/icon_huab74be30481f90068f99190f5c24f5c6_21326_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
       <link>https://xingchen.one/publication-type/1/</link>
     </image>
+    
+    <item>
+      <title>Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization</title>
+      <link>https://xingchen.one/publication/prompt_optimizer/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:02 +0000</pubDate>
+      <guid>https://xingchen.one/publication/prompt_optimizer/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    The findings of this work also power the recently launched &lt;strong&gt;Google Cloud Vertex AI Prompt Optimizer&lt;/strong&gt;. Read more: &lt;a href=&#34;https://cloud.google.com/blog/products/ai-machine-learning/announcing-vertex-ai-prompt-optimizer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[Google Cloud Blog]&lt;/a&gt; &lt;a href=&#34;https://developers.googleblog.com/en/enhance-your-prompts-with-vertex-ai-prompt-optimizer/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[Google for Developers Blog]&lt;/a&gt; &lt;a href=&#34;https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-optimizer&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[Vertex AI Documentations]&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-vertex-ai-prompt-optimizer&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Vertex AI Prompt Optimizer&#34;
+           src=&#34;https://xingchen.one/publication/prompt_optimizer/demo.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Vertex AI Prompt Optimizer
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>UQE: A Query Engine for Unstructured Databases</title>
+      <link>https://xingchen.one/publication/uql/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:01 +0000</pubDate>
+      <guid>https://xingchen.one/publication/uql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian Optimization of Functions over Node Subsets in Graphs</title>
+      <link>https://xingchen.one/publication/graphcombo/</link>
+      <pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/graphcombo/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Fairer Preferences Elicit Improved Human-Aligned Large Language Model Judgments</title>

@@ -3,30 +3,54 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xingchen.one/publication-type/1/</loc>
-    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
+    <lastmod>2024-12-22T00:00:02+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://xingchen.one/tag/large-language-models/</loc>
+    <lastmod>2024-12-22T00:00:02+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://xingchen.one/publication_types/</loc>
+    <lastmod>2024-12-22T00:00:02+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://xingchen.one/publication/</loc>
+    <lastmod>2024-12-22T00:00:02+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://xingchen.one/tags/</loc>
+    <lastmod>2024-12-22T00:00:02+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://xingchen.one/publication/prompt_optimizer/</loc>
+    <lastmod>2024-12-22T00:00:02+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://xingchen.one/tag/databases/</loc>
+    <lastmod>2024-12-22T00:00:01+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://xingchen.one/publication/uql/</loc>
+    <lastmod>2024-12-22T00:00:01+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://xingchen.one/tag/bayesian-optimization/</loc>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://xingchen.one/publication/graphcombo/</loc>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://xingchen.one/tag/graph-machine-learning/</loc>
+    <lastmod>2024-12-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://xingchen.one/publication/zepo/</loc>
     <lastmod>2024-12-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://xingchen.one/tag/large-language-models/</loc>
-    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://xingchen.one/tag/natural-language-processing/</loc>
-    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://xingchen.one/publication_types/</loc>
-    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://xingchen.one/publication/</loc>
-    <lastmod>2024-12-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://xingchen.one/tags/</loc>
     <lastmod>2024-12-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -35,10 +59,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://xingchen.one/publication/adabatal/</loc>
-    <lastmod>2024-05-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://xingchen.one/tag/bayesian-optimization/</loc>
     <lastmod>2024-05-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -75,10 +95,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://xingchen.one/publication/bayesoptg/</loc>
-    <lastmod>2023-12-10T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://xingchen.one/tag/graph-machine-learning/</loc>
     <lastmod>2023-12-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
