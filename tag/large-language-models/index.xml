@@ -5,12 +5,28 @@
     <link>https://xingchen.one/tag/large-language-models/</link>
       <atom:link href="https://xingchen.one/tag/large-language-models/index.xml" rel="self" type="application/rss+xml" />
     <description>Large Language Models</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Dec 2024 00:00:02 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://xingchen.one/media/icon_huab74be30481f90068f99190f5c24f5c6_21326_512x512_fill_lanczos_center_3.png</url>
       <title>Large Language Models</title>
       <link>https://xingchen.one/tag/large-language-models/</link>
     </image>
+    
+    <item>
+      <title>From Few to Many: Self-Improving Many-Shot Reasoners Through Iterative Optimization and Generation</title>
+      <link>https://xingchen.one/publication/bridge/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/bridge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi-Agent Design: Optimizing Agents with Better Prompts and Topologies</title>
+      <link>https://xingchen.one/publication/mass/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/mass/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization</title>
@@ -63,6 +79,14 @@
       <link>https://xingchen.one/publication/zepo/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingchen.one/publication/zepo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Astute RAG: Overcoming Imperfect Retrieval Augmentation and Knowledge Conflicts for Large Language Models</title>
+      <link>https://xingchen.one/publication/astuterag/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/astuterag/</guid>
       <description></description>
     </item>
     
