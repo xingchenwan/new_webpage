@@ -5,12 +5,20 @@
     <link>https://xingchen.one/tag/bayesian-optimization/</link>
       <atom:link href="https://xingchen.one/tag/bayesian-optimization/index.xml" rel="self" type="application/rss+xml" />
     <description>Bayesian Optimization</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 22 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Mar 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://xingchen.one/media/icon_huab74be30481f90068f99190f5c24f5c6_21326_512x512_fill_lanczos_center_3.png</url>
       <title>Bayesian Optimization</title>
       <link>https://xingchen.one/tag/bayesian-optimization/</link>
     </image>
+    
+    <item>
+      <title>From Few to Many: Self-Improving Many-Shot Reasoners Through Iterative Optimization and Generation</title>
+      <link>https://xingchen.one/publication/bridge/</link>
+      <pubDate>Sat, 01 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/bridge/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Bayesian Optimization of Functions over Node Subsets in Graphs</title>
