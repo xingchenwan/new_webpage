@@ -315,12 +315,12 @@
 
   
 
-<meta name="description" content="Comprehensive study powering the [Google Cloud Vertex AI Prompt Optimizer](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-optimizer) (NeurIPS 2024)." />
+<meta name="description" content="Text-to-SQL with DeepSeek R1-style GRPO reinforcement learning post-training (arXiv preprint)." />
 
 
 
-<link rel="alternate" hreflang="en-us" href="https://xingchen.one/publication/prompt_optimizer/" />
-<link rel="canonical" href="https://xingchen.one/publication/prompt_optimizer/" />
+<link rel="alternate" hreflang="en-us" href="https://xingchen.one/publication/reasoning_sql/" />
+<link rel="canonical" href="https://xingchen.one/publication/reasoning_sql/" />
 
 
 
@@ -348,11 +348,11 @@
 
 
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://xingchen.one/publication/prompt_optimizer/featured.png" />
+<meta property="twitter:image" content="https://xingchen.one/publication/reasoning_sql/featured.png" />
 <meta property="og:site_name" content="Xingchen Wan" />
-<meta property="og:url" content="https://xingchen.one/publication/prompt_optimizer/" />
-<meta property="og:title" content="Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization | Xingchen Wan" />
-<meta property="og:description" content="Comprehensive study powering the [Google Cloud Vertex AI Prompt Optimizer](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-optimizer) (NeurIPS 2024)." /><meta property="og:image" content="https://xingchen.one/publication/prompt_optimizer/featured.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:url" content="https://xingchen.one/publication/reasoning_sql/" />
+<meta property="og:title" content="Reasoning-SQL: Reinforcement Learning with SQL Tailored Partial Rewards for Reasoning-Enhanced Text-to-SQL | Xingchen Wan" />
+<meta property="og:description" content="Text-to-SQL with DeepSeek R1-style GRPO reinforcement learning post-training (arXiv preprint)." /><meta property="og:image" content="https://xingchen.one/publication/reasoning_sql/featured.png" /><meta property="og:locale" content="en-us" />
 
   
     <meta
@@ -361,7 +361,7 @@
     />
   
   
-    <meta property="article:modified_time" content="2024-12-22T00:00:02&#43;00:00">
+    <meta property="article:modified_time" content="2025-03-29T00:00:00&#43;00:00">
   
 
 
@@ -385,20 +385,20 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://xingchen.one/publication/prompt_optimizer/"
+    "@id": "https://xingchen.one/publication/reasoning_sql/"
   },
-  "headline": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+  "headline": "Reasoning-SQL: Reinforcement Learning with SQL Tailored Partial Rewards for Reasoning-Enhanced Text-to-SQL",
   
   "image": [
-    "https://xingchen.one/publication/prompt_optimizer/featured.png"
+    "https://xingchen.one/publication/reasoning_sql/featured.png"
   ],
   
   "datePublished": "2021-07-24T00:00:00Z",
-  "dateModified": "2024-12-22T00:00:02Z",
+  "dateModified": "2025-03-29T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Xingchen Wan"
+    "name": "Mohammadreza Pourreza"
   },
   
   "publisher": {
@@ -409,7 +409,7 @@
       "url": "https://xingchen.one/media/icon_huab74be30481f90068f99190f5c24f5c6_21326_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Comprehensive study powering the [Google Cloud Vertex AI Prompt Optimizer](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-optimizer) (NeurIPS 2024)."
+  "description": "Text-to-SQL with DeepSeek R1-style GRPO reinforcement learning post-training (arXiv preprint)."
 }
 </script>
 
@@ -431,7 +431,7 @@
 
 
   
-  <title>Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization | Xingchen Wan</title>
+  <title>Reasoning-SQL: Reinforcement Learning with SQL Tailored Partial Rewards for Reasoning-Enhanced Text-to-SQL | Xingchen Wan</title>
 
   
   
@@ -451,7 +451,7 @@
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="f40b100680cd9a21919616a5c5c2f608" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="39c08ecb8cb9cbb4826e4663fee547a6" >
 
   
   
@@ -871,7 +871,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization</h1>
+  <h1>Reasoning-SQL: Reinforcement Learning with SQL Tailored Partial Rewards for Reasoning-Enhanced Text-to-SQL</h1>
 
   
 
@@ -887,10 +887,14 @@
   <div>
     
 
-  <span class="author-highlighted">
+  <span >
+      Mohammadreza Pourreza</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      Shayan Talaei</span><i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="Equal contribution"></i>, <span >
+      Ruoxi Sun</span>, <span class="author-highlighted">
       Xingchen Wan</span>, <span >
-      Ruoxi Sun</span>, <span >
-      Hootan Nakhost</span>, <span >
+      Hailong Li</span>, <span >
+      Azalia Mirhoseini</span>, <span >
+      Amin Saberi</span>, <span >
       Sercan Ö. Arık</span>
   </div>
   
@@ -902,7 +906,7 @@
     
       
     
-    December, 2024
+    March, 2025
   </span>
   
 
@@ -942,14 +946,14 @@
 
 
 
-<a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/pdf/2406.15708v2" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/pdf/2503.23157" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/prompt_optimizer/cite.bib">
+        data-filename="/publication/reasoning_sql/cite.bib">
   Cite
 </a>
 
@@ -977,23 +981,9 @@
   
     
   
-  <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/2406.15708" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary btn-page-header" href="https://arxiv.org/abs/2503.23157" target="_blank" rel="noopener">
     Abstract</a>
 
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header" href="https://openreview.net/forum?id=IdtoJVWVnX" target="_blank" rel="noopener">
-    OpenReview</a>
-
 
 </div>
 
@@ -1001,9 +991,9 @@
 </div>
 
 
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 494px;">
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 394px;">
   <div style="position: relative">
-    <img src="/publication/prompt_optimizer/featured_huccd61fe82a2f30d00c0c2a6fd601ce92_200389_720x2500_fit_q100_h2_lanczos_3.webp" width="720" height="494" alt="" class="featured-image">
+    <img src="/publication/reasoning_sql/featured_hu0c906474c7335f519de5069b7246f4f9_315199_720x2500_fit_q100_h2_lanczos_3.webp" width="720" height="394" alt="" class="featured-image">
     
   </div>
 </div>
@@ -1014,7 +1004,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Large language models have demonstrated remarkable capabilities, but their performance is heavily reliant on effective prompt engineering. Automatic prompt optimization (APO) methods are designed to automate this and can be broadly categorized into those targeting instructions (instruction optimization, IO) vs. those targeting exemplars (exemplar optimization, EO). Despite their shared objective, these have evolved rather independently, with IO receiving more research attention recently. This paper seeks to bridge this gap by comprehensively comparing the performance of representative IO and EO techniques both isolation and combination on a diverse set of challenging tasks. Our findings reveal that intelligently reusing model-generated input-output pairs obtained from evaluating prompts on the validation set as exemplars, consistently improves performance on top of IO methods but is currently under-investigated. We also find that despite the recent focus on IO, how we select exemplars can outweigh how we optimize instructions, with EO strategies as simple as random search outperforming state-of-the-art IO methods with seed instructions without any optimization. Moreover, we observe a synergy between EO and IO, with optimal combinations surpassing the individual contributions. We conclude that studying exemplar optimization both as a standalone method and its optimal combination with instruction optimization remain a crucial aspect of APO and deserve greater consideration in future research, even in the era of highly capable instruction-following models.</p>
+    <p class="pub-abstract">Text-to-SQL is a challenging task involving multiple reasoning-intensive subtasks, including natural language understanding, database schema comprehension, and precise SQL query formulation. Existing approaches often rely on handcrafted reasoning paths with inductive biases that can limit their overall effectiveness. Motivated by the recent success of reasoning-enhanced models such as DeepSeek R1 and OpenAI o1, which effectively leverage reward-driven self-exploration to enhance reasoning capabilities and generalization, we propose a novel set of partial rewards tailored specifically for the Text-to-SQL task. Our reward set includes schema-linking, AI feedback, n-gram similarity, and syntax check, explicitly designed to address the reward sparsity issue prevalent in reinforcement learning (RL). Leveraging group relative policy optimization (GRPO), our approach explicitly encourages large language models (LLMs) to develop intrinsic reasoning skills necessary for accurate SQL query generation. With models of different sizes, we demonstrate that RL-only training with our proposed rewards consistently achieves higher accuracy and superior generalization compared to supervised fine-tuning (SFT). Remarkably, our RL-trained 14B-parameter model significantly outperforms larger proprietary models, e.g. o3-mini by 4% and Gemini-1.5-Pro-002 by 3% on the BIRD benchmark. These highlight the efficacy of our proposed RL-training framework with partial rewards for enhancing both accuracy and reasoning capabilities in Text-to-SQL tasks.</p>
     
 
     
@@ -1025,8 +1015,8 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Type</div>
           <div class="col-12 col-md-9">
-            <a href="/publication/#1">
-              Conference paper
+            <a href="/publication/#3">
+              Preprint
             </a>
           </div>
         </div>
@@ -1042,7 +1032,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">Advances in Neural Information Processing Systems 37</div>
+          <div class="col-12 col-md-9">arXiv preprint arXiv:2503.23157</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -1052,37 +1042,7 @@
 
     <div class="space-below"></div>
 
-    <div class="article-style"><div class="alert alert-note">
-  <div>
-    The findings of this work also power the recently launched <strong>Google Cloud Vertex AI Prompt Optimizer</strong>. Read more: <a href="https://cloud.google.com/blog/products/ai-machine-learning/announcing-vertex-ai-prompt-optimizer" target="_blank" rel="noopener">[Google Cloud Blog]</a> <a href="https://developers.googleblog.com/en/enhance-your-prompts-with-vertex-ai-prompt-optimizer/" target="_blank" rel="noopener">[Google for Developers Blog]</a> <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-optimizer" target="_blank" rel="noopener">[Vertex AI Documentations]</a>
-  </div>
-</div>
-<p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  id="figure-vertex-ai-prompt-optimizer">
-  <div class="d-flex justify-content-center">
-    <div class="w-100" ><img alt="Vertex AI Prompt Optimizer"
-           src="/publication/prompt_optimizer/demo.gif"
-           loading="lazy" data-zoomable /></div>
-  </div><figcaption>
-      Vertex AI Prompt Optimizer
-    </figcaption></figure>
-</p>
-</div>
+    <div class="article-style"></div>
 
     
 
@@ -1093,6 +1053,10 @@
 <div class="article-tags">
   
   <a class="badge badge-light" href="/tag/large-language-models/">Large Language Models</a>
+  
+  <a class="badge badge-light" href="/tag/natural-language-processing/">Natural Language Processing</a>
+  
+  <a class="badge badge-light" href="/tag/databases/">Databases</a>
   
 </div>
 
@@ -1113,7 +1077,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fxingchen.one%2Fpublication%2Fprompt_optimizer%2F&amp;text=Teach&#43;Better&#43;or&#43;Show&#43;Smarter%3F&#43;On&#43;Instructions&#43;and&#43;Exemplars&#43;in&#43;Automatic&#43;Prompt&#43;Optimization" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fxingchen.one%2Fpublication%2Freasoning_sql%2F&amp;text=Reasoning-SQL%3A&#43;Reinforcement&#43;Learning&#43;with&#43;SQL&#43;Tailored&#43;Partial&#43;Rewards&#43;for&#43;Reasoning-Enhanced&#43;Text-to-SQL" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1130,7 +1094,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fxingchen.one%2Fpublication%2Fprompt_optimizer%2F&amp;t=Teach&#43;Better&#43;or&#43;Show&#43;Smarter%3F&#43;On&#43;Instructions&#43;and&#43;Exemplars&#43;in&#43;Automatic&#43;Prompt&#43;Optimization" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fxingchen.one%2Fpublication%2Freasoning_sql%2F&amp;t=Reasoning-SQL%3A&#43;Reinforcement&#43;Learning&#43;with&#43;SQL&#43;Tailored&#43;Partial&#43;Rewards&#43;for&#43;Reasoning-Enhanced&#43;Text-to-SQL" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1149,7 +1113,7 @@
         
       
       <li>
-        <a href="mailto:?subject=Teach%20Better%20or%20Show%20Smarter%3F%20On%20Instructions%20and%20Exemplars%20in%20Automatic%20Prompt%20Optimization&amp;body=https%3A%2F%2Fxingchen.one%2Fpublication%2Fprompt_optimizer%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=Reasoning-SQL%3A%20Reinforcement%20Learning%20with%20SQL%20Tailored%20Partial%20Rewards%20for%20Reasoning-Enhanced%20Text-to-SQL&amp;body=https%3A%2F%2Fxingchen.one%2Fpublication%2Freasoning_sql%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1166,7 +1130,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fxingchen.one%2Fpublication%2Fprompt_optimizer%2F&amp;title=Teach&#43;Better&#43;or&#43;Show&#43;Smarter%3F&#43;On&#43;Instructions&#43;and&#43;Exemplars&#43;in&#43;Automatic&#43;Prompt&#43;Optimization" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fxingchen.one%2Fpublication%2Freasoning_sql%2F&amp;title=Reasoning-SQL%3A&#43;Reinforcement&#43;Learning&#43;with&#43;SQL&#43;Tailored&#43;Partial&#43;Rewards&#43;for&#43;Reasoning-Enhanced&#43;Text-to-SQL" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1183,7 +1147,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Teach&#43;Better&#43;or&#43;Show&#43;Smarter%3F&#43;On&#43;Instructions&#43;and&#43;Exemplars&#43;in&#43;Automatic&#43;Prompt&#43;Optimization%20https%3A%2F%2Fxingchen.one%2Fpublication%2Fprompt_optimizer%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=Reasoning-SQL%3A&#43;Reinforcement&#43;Learning&#43;with&#43;SQL&#43;Tailored&#43;Partial&#43;Rewards&#43;for&#43;Reasoning-Enhanced&#43;Text-to-SQL%20https%3A%2F%2Fxingchen.one%2Fpublication%2Freasoning_sql%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1200,7 +1164,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fxingchen.one%2Fpublication%2Fprompt_optimizer%2F&amp;title=Teach&#43;Better&#43;or&#43;Show&#43;Smarter%3F&#43;On&#43;Instructions&#43;and&#43;Exemplars&#43;in&#43;Automatic&#43;Prompt&#43;Optimization" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fxingchen.one%2Fpublication%2Freasoning_sql%2F&amp;title=Reasoning-SQL%3A&#43;Reinforcement&#43;Learning&#43;with&#43;SQL&#43;Tailored&#43;Partial&#43;Rewards&#43;for&#43;Reasoning-Enhanced&#43;Text-to-SQL" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1219,6 +1183,24 @@
 
 
   
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
   
     
 
@@ -1330,6 +1312,12 @@
 
     </div>
   </div>
+
+
+  
+    
+
+
 
 
   
