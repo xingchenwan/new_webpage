@@ -5,12 +5,20 @@
     <link>https://xingchen.one/tag/large-language-models/</link>
       <atom:link href="https://xingchen.one/tag/large-language-models/index.xml" rel="self" type="application/rss+xml" />
     <description>Large Language Models</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 29 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jul 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://xingchen.one/media/icon_huab74be30481f90068f99190f5c24f5c6_21326_512x512_fill_lanczos_center_3.png</url>
       <title>Large Language Models</title>
       <link>https://xingchen.one/tag/large-language-models/</link>
     </image>
+    
+    <item>
+      <title>Astute RAG: Overcoming Imperfect Retrieval Augmentation and Knowledge Conflicts for Large Language Models</title>
+      <link>https://xingchen.one/publication/astuterag/</link>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/astuterag/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Reasoning-SQL: Reinforcement Learning with SQL Tailored Partial Rewards for Reasoning-Enhanced Text-to-SQL</title>
@@ -87,14 +95,6 @@
       <link>https://xingchen.one/publication/zepo/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingchen.one/publication/zepo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Astute RAG: Overcoming Imperfect Retrieval Augmentation and Knowledge Conflicts for Large Language Models</title>
-      <link>https://xingchen.one/publication/astuterag/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingchen.one/publication/astuterag/</guid>
       <description></description>
     </item>
     

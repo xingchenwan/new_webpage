@@ -13,6 +13,14 @@
     </image>
     
     <item>
+      <title>Astute RAG: Overcoming Imperfect Retrieval Augmentation and Knowledge Conflicts for Large Language Models</title>
+      <link>https://xingchen.one/publication/astuterag/</link>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://xingchen.one/publication/astuterag/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Reasoning-SQL: Reinforcement Learning with SQL Tailored Partial Rewards for Reasoning-Enhanced Text-to-SQL</title>
       <link>https://xingchen.one/publication/reasoning_sql/</link>
       <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
@@ -95,14 +103,6 @@
       <link>https://xingchen.one/publication/zepo/</link>
       <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://xingchen.one/publication/zepo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Astute RAG: Overcoming Imperfect Retrieval Augmentation and Knowledge Conflicts for Large Language Models</title>
-      <link>https://xingchen.one/publication/astuterag/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://xingchen.one/publication/astuterag/</guid>
       <description></description>
     </item>
     
