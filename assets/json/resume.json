@@ -1,0 +1,64 @@
+{
+  "basics": {
+    "name": "Xingchen Wan",
+    "image": "",
+    "email": "xingchenw [at] google.com",
+    "url": "https://xingchen.one",
+    "summary": "Senior Research Scientist at Google",
+    "location": {
+      "address": "1600 Amphitheatre Parkway",
+      "postalCode": "CA 94043",
+      "city": "Mountain View",
+      "countryCode": "US",
+      "region": "California"
+    }
+  },
+  "work": [
+    {
+      "name": "Google",
+      "position": "Senior Research Scientist",
+      "startDate": "2025-05-01"
+    },
+    {
+      "name": "Google",
+      "position": "Research Scientist",
+      "startDate": "2025-02-26",
+      "endDate": "2025-04-30"
+    },
+     {
+      "name": "Google",
+      "position": "Research Intern",
+      "location": "London, UK & San Francisco Bay Area, CA, US",
+      "startDate": "2022-10-01",
+      "endDate": "2023-06-01"
+
+    },
+    {
+      "name": "Meta",
+      "position": "Research Intern",
+      "location": "London, UK",
+      "startDate": "2022-05-01",
+      "endDate": "2025-09-01"
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Oxford",
+      "location": "Oxford, UK",
+      "url": "https://ox.ac.uk/",
+      "area": "Machine Learning",
+      "studyType": "PhD",
+      "startDate": "2019-10-01",
+      "endDate": "2023-11-01"
+    },
+      {
+      "institution": "University of Oxford",
+      "location": "Oxford, UK",
+      "url": "https://ox.ac.uk/",
+      "area": "Engineering Science",
+      "studyType": "BA, MEng",
+      "startDate": "2015-10-01",
+      "endDate": "2019-07-01"
+    }
+  ]
+}
